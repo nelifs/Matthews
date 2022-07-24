@@ -1,0 +1,24 @@
+{
+  "name": "help-me-pls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon website/src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/voice": "^0.10.0",
+    "chalk": "^4.1.0",
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1",
+    "erela.js": "^2.3.3",
+    "moment": "^2.29.3",
+    "mongodb": "^4.8.0",
+    "node-fetch": "^2.6.7",
+    "pm2": "^5.2.0",
+    "validator": "^13.7.0"
+  }
+}
