@@ -25,7 +25,6 @@ client.manager = new Manager({
     }
 });
 
-
 module.exports = client;
 
 process.on('uncaughtException', console.error);
