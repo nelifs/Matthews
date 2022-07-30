@@ -7,6 +7,7 @@ class APIService {
         this.retryAttemptsCount = 0;
     }
 
+
     async send(retryAttempts) {
         if (retryAttempts === this.retryAttemptsCount) return;
         fetch(this.url + `?ping=${client.ws.ping}`
@@ -27,13 +28,13 @@ class APIService {
 
     async sendStatisticsOne(retryAttempts) {
         await client.logger.send('API Service', '')
-        await this.send(retryAttempts)
+        await send(retryAttempts)
     }
 
     async sendStatisticsInterval(time, retryAttempts) {
         await client.logger.send('API Service', '')
         setInterval(() => {
-            this.send(retryAttempts);
+            send(retryAttempts);
         }, time);
     }
 }
