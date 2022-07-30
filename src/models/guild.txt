@@ -1,0 +1,10 @@
+const schema = Schema({
+    id: String,
+    prefix: String,
+    muteRole: String,
+    blWords: Array,
+    blLinks: Array,
+    wlLinks: Array,
+})
+
+module.exports = model('Guilds', schema, 'Guilds')
