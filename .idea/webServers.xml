@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ceca5942-a627-4742-84f4-9b3f79a4e998" name="Matthews" url="http://n7.danbot.host">
+        <fileTransfer accessType="SFTP" host="n7.danbot.host" port="2022" sshConfigId="edb46adf-a4ca-44cf-9b9c-771192cda8f2" sshConfig="Node-07">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="fca49e87-0f8e-4fe7-9cbe-bc8d05000eb2" name="Matthews Dono" url="http://dono-03.danbot.host">
+        <fileTransfer accessType="SFTP" host="dono-03.danbot.host" port="2022" sshConfigId="908e5144-b887-4a7f-a46e-f98c6c142229" sshConfig="Dono-03">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

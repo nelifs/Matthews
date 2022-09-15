@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="dono-03.danbot.host" id="908e5144-b887-4a7f-a46e-f98c6c142229" port="2022" customName="Dono-03" nameFormat="CUSTOM" username="nelifs.7cdf116c">
+        <option name="customName" value="Dono-03" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="n7.danbot.host" id="edb46adf-a4ca-44cf-9b9c-771192cda8f2" port="2022" customName="Node-07" nameFormat="CUSTOM" username="nelifs.1737105c">
+        <option name="customName" value="Node-07" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
