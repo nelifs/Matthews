@@ -1,0 +1,13 @@
+const BaseListener = require('../../structures/BaseListener')
+
+class DebugListener extends BaseListener {
+    constructor() {
+        super('Debug', {event: 'debug'});
+    }
+
+    run(client, d) {
+        client.logger.debug(d)
+    }
+}
+
+module.exports = DebugListener;

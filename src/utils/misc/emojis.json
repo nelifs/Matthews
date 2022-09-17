@@ -1,0 +1,33 @@
+{
+  "idle": "<:idle:766668278080602152>",
+  "dnd": "<:dnd:766668354483519529>",
+  "online": "<:online:766668259641786368>",
+  "offline": "<:offline:766668377589678140>",
+  "no": "<:xmark:1007552936177565736>",
+  "neutral": "<:neutral:1007553112933937233>",
+  "yes": "<:check:1007552913364746313>",
+  "flags": {
+    "HOUSE_BRILLIANCE": "<:hypesquad_briliance:947061717844783125>",
+    "HOUSE_BALANCE": "<:hypesquad_balance:947061817677602836>",
+    "HOUSE_BRAVERY": "<:hypesquad_bravery:947061772324569088>",
+    "HYPESQUAD_EVENTS": "<:BadgeHypesquad:952999654453284974>",
+    "BUGHUNTER_LEVEL_1": "<:BugHunter:952999607317704721>",
+    "BUGHUNTER_LEVEL_2": ",<:bug_hunter_2:947061159079604236>",
+    "EARLY_VERIFIED_BOT_DEVELOPER": "<:blurple_verified_bot_developer:947062242258604062>",
+    "EARLY_SUPPORTER": "<:discord_earlysupporter:947061398536585216>",
+    "PARTNERED_SERVER_OWNER": "<:discord_partner:764494349324648501>",
+    "DISCORD_EMPLOYEE": "<:discord_employee:947061517478662224>",
+    "DISCORD_CERTIFIED_MODERATOR": "<:blurple_moderator:952997511507877958>"
+  },
+  "music": {
+    "play": "<:play:1010891664614756352>\n",
+    "pause": "<:pause:1010891663109013615>",
+    "repeatOff": "<:repeatOff:1010891666741276782>",
+    "repeatTrack": "<:repeatTrack:1010891669715034144>",
+    "repeatQueue": "<:repeatQueue:1010891668167327814>",
+    "skip": "<:skip:1010891671925440512>",
+    "stop": "<:stop:1010891673326342154>",
+    "volumeUp": "<:volumeUp:1010891677210255370>",
+    "volumeDown": "<:volumeDown:1010891674731417612>"
+  }
+}
