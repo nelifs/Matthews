@@ -1,9 +1,0 @@
-const schema = Schema({
-    id: String,
-    guildId: String,
-    warns: Array,
-    unbanTime: String,
-    unmuteTime: String,
-})
-
-module.exports = model('Users', schema, 'Users')
