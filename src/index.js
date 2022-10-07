@@ -16,8 +16,8 @@ client.manager = new Kazagumo({
     restTimeout: 10000,
     plugins: [
         new Spotify({
-            clientId: '2ac4adfed5cc47cebf2a874dfa71b3d0',
-            clientSecret: 'f2404af85a134dacb4743060f11c1a3e',
+            clientId: 'no',
+            clientSecret: 'no',
             playlistPageLimit: 1,
             albumPageLimit: 1,
             searchLimit: 10,
