@@ -1,5 +1,6 @@
 const BaseCommand = require('../../structures/BaseSlashCommand.js');
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
 
 class PingCommand extends BaseCommand {
     constructor(props) {
@@ -11,14 +12,17 @@ class PingCommand extends BaseCommand {
     }
 
     async run(client, message) {
-        const before = process.hrtime.bigint();
-
-        client.database.findAll('guilds', {});
-        client.database.findAll('users', {});
-
-        const after = process.hrtime.bigint();
-        const ping = (parseInt(after - before) / 1000000).toFixed(2);
-        await client.reply(message, `Понг! 🏓`, `\nВебсокет: **${client.ws.ping}ms**\nБаза-данных: **${ping}ms**`)
+        const embed = new MessageEmbed()
+            .addFields({
+                    name: 'Задержка API', value: `
+\` > \` Сейчас: **${client.ws.ping}ms**
+\` > \` 5 мин: **${client.ping5m}ms**
+\` > \` 15 мин: **${client.ping15m}ms**`
+                }
+            )
+            .setColor(client.colors.main)
+            .setTimestamp(client.ws.shards.first().lastPingTimestamp);
+        message.reply({ embeds: [embed] });
     }
 }
 

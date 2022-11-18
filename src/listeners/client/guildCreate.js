@@ -8,9 +8,12 @@ class ErrorListener extends BaseListener {
     async run(client, guild) {
         const dbGuild = await client.database.findOne('guilds', { id: guild.id });
         if (!dbGuild) {
-            client.database.insert('guilds', [{
+            await client.database.insert('guilds', [{
                 id: guild.id,
                 infinityPlaying: false,
+                djStatus: false,
+                djRole: 0,
+                djPerms: [],
             }]);
 
             client.color = client.colors.main;

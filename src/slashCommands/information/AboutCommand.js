@@ -21,7 +21,7 @@ class AboutCommand extends BaseCommand {
 Текущая версия: **v${client.version}**
             `)
             .addField('Создан благодаря', `[Discord.js ${version}](https://discord.js.org/#/)\n[Node.js ${process.version}](https://nodejs.org/)`, true)
-            .addField('Ссылки', '[Сервер поддержки](https://discord.gg/bkEHnU4y)', true)
+            .addField('Ссылки', '[Сервер поддержки](https://discord.gg/)', true)
             .setTimestamp(Date.now())
             .setFooter({ text: `${client.users.cache.get(process.env.OWNERID).username} Все права замурлыканы` })
             .setColor(client.colors.main);

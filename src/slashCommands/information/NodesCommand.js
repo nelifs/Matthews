@@ -21,15 +21,21 @@ class NodesCommand extends BaseCommand {
             .setTitle('Музыкальные ноды')
             .setThumbnail(client.user.avatarURL({ size: 1024, format: 'png' }));
         for (const node of nodes) {
-            embed.addField(`${node.name === 'Serene' ? node.name + ' [Основная]' : node.name + ' [Резервная]'}`, `
+            embed.addField(`${node.group === 'main' ? node.name + ' [Основная]' : node.name + ' [Резервная]'}`, `
 Онлайн: **${node.state ? client.customEmojis.yes : client.customEmojis.no}**
 Подключена: **${!node.connected === true && node.state ? client.customEmojis.yes : client.customEmojis.no}**
-Плееров: **${!node?.stats?.players ? 0 : node.stats.players}**
-Активных плееров: **${!node?.stats?.playingPlayers ? 0 : node.stats.playingPlayers}**
-Загрузка сервера: **${!node?.stats?.cpu ? client.customEmojis.no : (Math.round(node?.stats?.cpu.systemLoad * 100)).toFixed(2) + '%'}**
-        `);
+Плееров: **${node.stats.players ?? 'err'}**
+Активных плееров: **${node.stats.playingPlayers ?? 'err'}**
+
+**Нагрузка:**
+\` > \` Лавалинк: **${(node?.stats?.cpu.lavalinkLoad * 100).toFixed(2) + '%' ?? 'err'}** 
+\` > \` Система: **${(node?.stats?.cpu.systemLoad * 100).toFixed(2) + '%' ?? 'err'}** 
+
+**Память:** 
+\` > \` Используется: **${client.functions.numberFormat(~~(node?.stats?.memory.used / 1024 ** 2), 0, '.', ',')} MB**
+\` > \` Выделено: **${client.functions.numberFormat(~~(node?.stats?.memory.allocated / 1024 ** 2), 0, '.', ',')} MB**
+        `, true);
         }
-        embed.setTimestamp(Date.now());
         embed.setColor(client.colors.main);
         await message.reply({ content: null, embeds: [embed] });
     }
