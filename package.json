@@ -1,0 +1,26 @@
+{
+  "name": "matthews",
+  "version": "3.0.0-full_rewrite",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "sharding": "node src/sharding.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^1.2.0",
+    "@megavasiliy007/sdc-api": "github:MegaVasiliy007/sdc-api",
+    "chalk": "^4.1.0",
+    "discord.js": "^13.10.2",
+    "dotenv": "^16.0.1",
+    "kazagumo": "^2.2.3",
+    "kazagumo-spotify": "^1.1.5",
+    "moment": "^2.29.3",
+    "mongodb": "^4.8.0",
+    "ms": "^2.1.3",
+    "prettysize": "^2.0.0",
+    "shoukaku": "^3.2.0",
+    "systeminformation": "^5.13.1"
+  }
+}
