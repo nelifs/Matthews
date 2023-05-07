@@ -17,8 +17,8 @@ client.manager = new Kazagumo({
     defaultSearchEngine: 'soundcloud',
     plugins: [
         new Spotify({
-            clientId: '2ac4adfed5cc47cebf2a874dfa71b3d0',
-            clientSecret: 'f2404af85a134dacb4743060f11c1a3e',
+            clientId: '',
+            clientSecret: '',
             playlistPageLimit: 7,
             albumPageLimit: 7,
             searchLimit: 10,
